@@ -17,4 +17,4 @@ module.exports = {
   useTabs: false,
   vueIndentScriptAndStyle: false,
   parser: 'typescript',
-};
+}

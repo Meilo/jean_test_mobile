@@ -1,12 +1,7 @@
-module.exports = {
-  presets: ['module:@react-native/babel-preset'],
-  plugins: [
-    [
-      'module-resolver',
-      {
-        root: ['./src'],
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.ios.js', '.android.js'],
-      },
-    ],
-  ],
-};
+module.exports = function (api) {
+  api.cache(false)
+  return {
+    presets: ['module:@react-native/babel-preset'],
+    // plugins: ['react-native-reanimated/plugin'],
+  }
+}
